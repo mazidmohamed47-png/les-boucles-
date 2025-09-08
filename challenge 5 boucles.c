@@ -3,19 +3,19 @@
 
 int main()
 {
-    int Base,Exposant,i;
+    int Base,puissance,i;
     int resulta =1;
     printf("veuillez entrer le nombre a elever : ");
     scanf("%d",&Base);
     printf("veuillez entrer le puissance a appliquer  : ");
-    scanf("%d",&Exposant);
-    if (Exposant==0)
-        printf("%d=1",Exposant);
+    scanf("%d",&puissance);
+    if (puissance==0)
+        printf("%d^%d = 1",Base,puissance);
     else{
-    for (i=1;i<=Exposant;i++){
+    for (i=1;i<=puissance;i++){
         resulta=resulta*Base;
     }
-    printf(" %d ",resulta);
+    printf(" %d ^ %d = %d",Base,puissance,resulta);
     }
     return 0;
 }
